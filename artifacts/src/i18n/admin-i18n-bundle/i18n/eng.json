@@ -1370,6 +1370,8 @@
         "RPR-DDP-SUCCESS-001": "Demo Dedupe is Successful",
         "RPR-DDP-FAILED-001": "Biometric Duplicate was Found in ABIS",
         "RPR-PKV-FAILED-021": "Applicant number of spouse has exceeded the maximum",
+		"RPR-PKV-FAILED-022": "Applicant existing userServiceType is not eligible for requested change",
+        "RPR-PKV-FAILED-023": "Applicant is not eligible to Renewal service",
         "RPR-PKV-FAILED-020": "Applicant is not eligible for  Lost service",
         "RPR-PKV-FAILED-019": "Applicant is not eligible to GetFirstId service",
         "RPR-PKV-FAILED-018": "Already card is present for applicant",
