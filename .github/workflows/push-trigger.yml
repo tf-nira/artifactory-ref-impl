@@ -1,6 +1,13 @@
 name: Artifactory build upon a push
 
 on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: 'Message for manually triggering'
+        required: false
+        default: 'Triggered for Updates'
+        type: string
   release:
     types: [published]
   pull_request:
