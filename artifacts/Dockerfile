@@ -141,6 +141,8 @@ RUN mkdir -p ${biosdk_client_zip_path}/biosdk-client ${demosdk_zip_path}/demosdk
 
 COPY /src/redis-cache/cache-provider-redis-1.2.0.1.jar ${cache_path}
 
+COPY /src/redis-cache/proxy-certificate.jks ${cache_path}
+
 COPY /src/sdk/biosdk/install.sh ${biosdk_client_zip_path}/biosdk-client/
 
 COPY /src/nira-sms/* ${smsJar_path}/
