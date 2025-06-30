@@ -1,4 +1,4 @@
-FROM openjdk:11-slim
+FROM nginx@sha256:af296b188c7b7df99ba960ca614439c99cb7cf252ed7bbc23e90cfda59092305
 
 
 ARG SOURCE
@@ -29,7 +29,7 @@ apt-get update -y && \
 apt-get install -y --no-install-recommends unzip wget zip openjdk-11-jdk && \
 groupadd -g ${container_user_gid} ${container_user_group} &&\
 rm -rf /var/lib/apt/lists/* &&\
-wget https://dlcdn.apache.org/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.tar.gz &&\
+wget https://archive.apache.org/dist/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.tar.gz &&\
 tar -xzf apache-maven-3.8.8-bin.tar.gz && mv apache-maven-3.8.8 /usr/local/maven && rm apache-maven-3.8.8-bin.tar.gz &&\
 useradd -u ${container_user_uid} -g ${container_user_group} -s /bin/sh -m ${container_user} \
 && mkdir -p /var/run/nginx /var/tmp/nginx \
