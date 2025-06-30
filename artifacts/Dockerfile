@@ -1,4 +1,5 @@
-FROM nginx@sha256:af296b188c7b7df99ba960ca614439c99cb7cf252ed7bbc23e90cfda59092305
+FROM openjdk:11-slim
+
 
 ARG SOURCE
 ARG COMMIT_HASH
