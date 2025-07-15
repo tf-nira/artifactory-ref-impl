@@ -65,6 +65,9 @@ rm -rf  ${work_dir}/oidc-demo-i18n-bundle \
  ${work_dir}/esignet-signup-i18n-bundle
 echo i18n-bundles zip creation for all the mentioned modules completed
 
+echo theme zip creation for all mentioned modules started
+zip -r -j ${theme_zip_path}/esignet-theme.zip ${work_dir}/esignet-theme/*
+
 zip -r -j ${theme_zip_path}/esignet-signup-theme.zip ${work_dir}/esignet-signup-theme/*
 rm -rf ${work_dir}/esignet-theme ${work_dir}/esignet-signup-theme
 echo theme zip creation for all mentioned modules complete
@@ -75,9 +78,6 @@ rm -rf ${work_dir}/esignet-image
 zip -r -j ${image_zip_path}/esignet-signup-image.zip ${work_dir}/esignet-signup-image/*
 rm -rf ${work_dir}/esignet-signup-image
 echo image zip creation for all mentioned modules completed
-
-echo theme zip creation for all mentioned modules started
-zip -r -j ${theme_zip_path}/esignet-theme.zip ${work_dir}/esignet-theme/*
 
 rm -rf ${work_dir}/admin-i18n-bundle ${work_dir}/pmp-i18n-bundle ${work_dir}/pmp-revamp-i18n-bundle ${work_dir}/pre-registration-i18n-bundle ${work_dir}/oidc-demo-i18n-bundle ${work_dir}/idp-i18n-bundle
 echo i18n-bundle zip creation completed
