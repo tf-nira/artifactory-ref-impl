@@ -21,6 +21,7 @@ on:
       - release*
       - tf_nira_dev
       - tech5_biosdk
+      - ESignet
   
 jobs:
   build-docker-artifactory-server:
