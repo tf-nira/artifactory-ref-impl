@@ -176,6 +176,16 @@ COPY /src/i18n/pmp-i18n-bundle/*  ${work_dir}/pmp-i18n-bundle/
 
 COPY /src/i18n/pmp-revamp-i18n-bundle/*  ${work_dir}/pmp-revamp-i18n-bundle/
 
+COPY /src/theme/esignet-theme/* ${work_dir}/esignet-theme/
+ 
+COPY /src/image/esignet-image/* ${work_dir}/esignet-image/
+ 
+COPY /src/image/esignet-signup-image/* ${work_dir}/esignet-signup-image/
+ 
+COPY /src/i18n/esignet-signup-i18n-bundle/*  ${work_dir}/esignet-signup-i18n-bundle/
+ 
+COPY /src/theme/esignet-signup-theme/* ${work_dir}/esignet-signup-theme/
+
 COPY /src/impl/* ${custom_zip_path}/
 
 COPY /src/i18n/pre-registration-i18n-bundle/*  ${work_dir}/pre-registration-i18n-bundle/
