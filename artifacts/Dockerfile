@@ -194,7 +194,7 @@ COPY /src/i18n/mock-relying-party-i18n-bundle/*  ${work_dir}/mock-relying-party-
 
 COPY /src/i18n/esignet-i18n-bundle/*  ${work_dir}/esignet-i18n-bundle/
 
-COPY /src/theme/esignet-theme/* ${work_dir}/esignet-theme/
+COPY /src/theme/esignet-theme/ ${work_dir}/esignet-theme/
  
 COPY /src/image/esignet-image/* ${work_dir}/esignet-image/
  
