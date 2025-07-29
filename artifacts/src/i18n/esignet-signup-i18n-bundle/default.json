@@ -1,0 +1,12 @@
+{
+  "languages_2Letters": {
+    "en": "English"
+  },
+  "rtlLanguages": [],
+  "langCodeMapping": {
+    "eng": "en"
+  },
+  "langFontMapping": {
+    "en": "font-inter"
+  }
+}
