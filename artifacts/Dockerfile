@@ -41,6 +41,16 @@ ENV MAVEN_HOME /usr/local/maven
 ENV PATH $MAVEN_HOME/bin:$PATH
 ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
 
+RUN wget -O /tmp/mock-sdk-jpeg-extractor.jar "https://github.com/Dharanidharan-S-04/newrepoforgit/releases/download/v1.2.0.1/mock-sdk-jpeg-extractor-1.2.0.1-20231228.043631-25-jar-with-dependencies.jar" && \
+    mvn install:install-file \
+        -DgroupId=io.mosip.mock.sdk \
+        -DartifactId=mock-sdk-jpeg-extractor \
+        -Dversion=1.2.0.1-SNAPSHOT \
+        -Dclassifier=jar-with-dependencies \
+        -Dpackaging=jar \
+        -Dfile=/tmp/mock-sdk-jpeg-extractor.jar && \
+    rm /tmp/mock-sdk-jpeg-extractor.jar
+
 # set working directory for the user
 WORKDIR /home/${container_user}
 
