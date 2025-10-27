@@ -487,6 +487,7 @@
         "id": "Registration ID",
         "status": "Status",
         "viewMore": "View More",
+		"resume": "Resume",
         "viewLess": "View Less",
         "errorMessages": {
             "title": "Error",
