@@ -503,6 +503,7 @@
         "status": "Status",
         "viewMore": "View More",
 		"resume": "Resume",
+		"sentToPerso": "Send to Perso",
         "viewLess": "View Less",
         "errorMessages": {
             "title": "Error",
