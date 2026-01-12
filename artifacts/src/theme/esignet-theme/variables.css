@@ -55,6 +55,8 @@
   --multipurpose-login-card-background-color: #FFFFFF;
   --top-left-bg-logo-url: url("/images/top_left_bg_logo.svg");
   --bottom-right-bg-logo-url: url("/images/bottom_right_bg_logo.svg");
+  --top-right-bg-logo-display: none;
+  --bottom-left-bg-logo-display: none;
   --login-client-logo-image-height: 5rem;
   --login-client-logo-image-width: 8rem;
   --login-alternate-arrow: "\21CB";
