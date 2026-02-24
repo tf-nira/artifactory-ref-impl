@@ -32,7 +32,7 @@
       "subItem1": "Wallet",
       "subItem2": "Generate PRN",
       "subItem3": "Validate PRN",
-      "subItem4": "Search Payments"
+      "subItem4": "Search PRN"
     }
   },
   "dashboard": {
@@ -63,7 +63,7 @@
     "validatingLabel": "Validating...",
     "prnValidLabel": "PRN is Valid",
     "prnInvalidLabel": "PRN Validation Failed",
-    "searchPaymentsTitle": "Search Payments",
+    "searchPaymentsTitle": "Search PRN",
     "dateRangeLabel": "Date Range",
     "partnerLabel": "Partner",
     "categoryLabel": "Category",
