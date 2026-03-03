@@ -374,7 +374,7 @@
       "noBtnTxt": "No",
       "confirmation-message": [
         "Do you want to Activate the ",
-        "? \n You can Deactivate it later if you wish. Till then it will be set as Active"
+        "?"
       ],
       "confirmation-title": "Confirmation"
     },
