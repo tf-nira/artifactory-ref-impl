@@ -381,6 +381,7 @@
     "IDA-DPM-004": "Device Type and Biometric Type do not match",
     "IDA-MLC-024": "Domain of request is not matching with Domain of biometrics",
     "IDA-MLC-025": "Partner Certificate is not available",
+	"IDA-MLC-032": "The person has been declared deceased",
     "IDA-MPA-019": "Partner policy is not active",
     "IDA-IDV-001": "Input Data Validation Failed",
     "IDA-RST-001": "URI should not be empty",
