@@ -66,3 +66,8 @@ echo i18n-bundle zip creation completed
 echo master-templates zip creation started
 zip -r -j ${master_template_path}/master-templates.zip ${work_dir}/master-templates/*
 echo master-templates zip creation completed
+
+echo pdf-generator zip creation started
+ls -ltr ${work_dir}/pdf-generator/
+zip -r -j ${pdf_generator_path}/pdf-generator.zip ${work_dir}/pdf-generator/*
+echo pdf-generator zip creation completed
