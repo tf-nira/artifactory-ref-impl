@@ -61,7 +61,7 @@
     "enterPrnLabel": "Enter the PRN code",
     "validateBtn": "Validate",
     "validatingLabel": "Validating...",
-    "prnValidLabel": "PRN is Valid",
+    "prnValidLabel": "PRN Validated Successfully",
     "prnInvalidLabel": "PRN Validation Failed",
     "searchPaymentsTitle": "Search PRN",
     "dateRangeLabel": "Date Range",
