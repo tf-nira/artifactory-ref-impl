@@ -332,7 +332,7 @@
     "109": "Requested Number of Biometric (Finger/Iris) Not Supported",
     "IDA-MLC-002": "Invalid UIN",
     "IDA-MLC-003": "UIN has been deactivated",
-    "IDA-MLC-004": "Invalid VID",
+    "IDA-MLC-004": "Invalid NIN/AIN",
     "IDA-MLC-005": "Invalid ID",
     "IDA-MLC-014": "Notification Channel not registered. Individual has to register and try again",
     "IDA-MLC-006": "Missing Input parameter",
@@ -412,7 +412,7 @@
       "send_otp_failed_msg": "Failed to Send OTP",
       "invalid_otp_channel": "Invalid OTP Channel Provided.",
       "auth_failed": "Incorrect OTP. Please try again.",
-      "IDA-MLC-018": "Invalid UIN/VID. Please enter a valid UIN/VID."
+      "IDA-MLC-018": "Invalid NIN/AIN. Please enter a valid NIN/AIN."
     },
     "biometrics": {
       "IDA-BIA-001": "Biometric data did not match",
@@ -433,12 +433,12 @@
       "IDA-BIA-017": "Unable to Perform Biometric Match due to a Technical Issue",
       "IDA-BIA-018": "Unable to Process the Request due to a Technical Issue",
       "auth_failed": "Biometric data not available. Please try again.",
-      "IDA-MLC-018": "Invalid UIN/VID. Please enter a valid UIN/VID."
+      "IDA-MLC-018": "Invalid NIN/AIN. Please enter a valid NIN/AIN."
     },
     "pin": {
       "invalid_pin": "Invalid Pin",
       "auth_failed": "Incorrect pin. Please try again.",
-      "IDA-MLC-018": "Invalid UIN/VID. Please enter a valid UIN/VID."
+      "IDA-MLC-018": "Invalid NIN/AIN. Please enter a valid NIN/AIN."
     },
     "wallet": {
       "failed_to_link": "Failed to Link",
@@ -446,7 +446,7 @@
       "invalid_qrcode_config": "Invalid QRCode configuration. Please report to the site admin.",
       "link_code_refresh_failed": "Failed to Load",
       "auth_failed": "Wallet local authentication failed. Please try again.",
-      "IDA-MLC-018": "Invalid UIN/VID. Please enter a valid UIN/VID."
+      "IDA-MLC-018": "Invalid NIN/AIN. Please enter a valid NIN/AIN."
     },
     "password": {
       "auth_failed": "Incorrect username or password. Please try again.",
