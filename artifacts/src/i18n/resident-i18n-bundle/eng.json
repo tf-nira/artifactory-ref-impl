@@ -155,8 +155,8 @@
     },
     "uinservices": {
         "login": "Login",
-        "title": "Enter your AID/NIN/VID",
-        "description": "Enter your AID/NIN/VID to proceed.",
+        "title": "Enter your AID",
+        "description": "Enter your AID to proceed.",
         "plaginLabel": "I'm not a robot",
         "buttonText": "Send OTP",
         "home": "Home",
