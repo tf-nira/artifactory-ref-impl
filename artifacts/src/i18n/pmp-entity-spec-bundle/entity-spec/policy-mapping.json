@@ -225,7 +225,7 @@
 		{
 			"filtername": "policyName",
 			"filterlabel": {
-				"eng": "Partner Name",
+				"eng": "Policy Name",
                                 "ara": "اسم السياسة",
                                 "fra": "Nom de la politique",
                                 "hin": "पालिसी का नाम",
