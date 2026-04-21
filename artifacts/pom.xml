@@ -105,6 +105,10 @@
 		<mock-sdk.version>1.2.0.2</mock-sdk.version>
 		<mock-sdk.location>/usr/share/nginx/html/artifactory/libs-release-local/mock-sdk/1.1.5</mock-sdk.location>
 		<mock-sdk.fileName>mock-sdk.jar</mock-sdk.fileName>
+		<!-- image-compressor-->
+		<image-compressor.version>0.1.0-SNAPSHOT</image-compressor.version>
+		<image-compressor.location>/usr/share/nginx/html/artifactory/libs-release-local/compressor/image-compressor</image-compressor.location>
+		<image-compressor.fileName>image-compressor-jar-with-dependencies.jar</image-compressor.fileName>
 		<!-- mock-sdk-jpeg-extractor -->
 		<mock-sdk-jpeg-extractor.version>1.2.0.1-SNAPSHOT</mock-sdk-jpeg-extractor.version>
 		<mock-sdk-jpeg-extractor.location>/usr/share/nginx/html/artifactory/libs-release-local/jpeg-mock-sdk/1.1.5</mock-sdk-jpeg-extractor.location>
@@ -237,6 +241,16 @@
 					<classifier>jar-with-dependencies</classifier>
 					<type>jar</type>
                 		</artifactItem>
+<!-- artifactItem section for image-compressor dependency -->
+						<artifactItem>
+							<groupId>io.mosip.image.compressor</groupId>
+							<artifactId>image-compressor</artifactId>
+							<version>${image-compressor.version}</version>
+							<outputDirectory>${image-compressor.location}</outputDirectory>
+							<destFileName>${image-compressor.fileName}</destFileName>
+							<classifier>jar-with-dependencies</classifier>
+							<type>jar</type>
+						</artifactItem>					
 <!-- artifactItem section for mock-sdk-jpeg-extractor -->
 				<artifactItem>
 					<groupId>io.mosip.mock.sdk</groupId>
