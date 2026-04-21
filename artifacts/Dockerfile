@@ -92,6 +92,9 @@ ENV mosip_plugins_zip_path=${base_path}/libs-release-local/mosip-plugins
 # environment valiable for sdk jar
 ENV sdk_path=${base_path}/libs-release-local/mock-sdk/1.1.5/
 
+# environment valiable for image-compressor jar
+ENV image_compressor_path=${base_path}/libs-release-local/compressor/
+
 # environment valiable for sdk jar
 ENV jpeg_sdk_path=${base_path}/libs-release-local/jpeg-mock-sdk/1.1.5/
 
