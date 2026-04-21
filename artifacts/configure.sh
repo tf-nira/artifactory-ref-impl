@@ -22,14 +22,10 @@ rm -rf ${jpegsdk_lib_zip_path}/jpeg-sdk-lib
 echo jpeg-sdk-lib zip creation completed
 
 echo biosdk-lib zip creation started
-zip -r -j ${biosdk_lib_zip_path}/biosdk-lib.zip ${biosdk_lib_zip_path}/biosdk-lib/*
-rm -rf ${biosdk_lib_zip_path}/biosdk-lib
+zip -r -j ${biosdk_lib_zip_path}/image-compressor.zip ${biosdk_lib_zip_path}/image-compressor/*
+rm -rf ${biosdk_lib_zip_path}/image-compressor
 echo biosdk-lib zip creation completed
 
-echo image-compressor zip creation started
-zip -r -j ${image_compressor_path}/image-compressor.zip ${image_compressor_path}/image-compressor/*
-rm -rf ${image_compressor_path}/image-compressor
-echo image-compressor zip creation completed
 
 echo demosdk-client zip creation started
 zip -r -j ${demosdk_zip_path}/demosdk.zip ${demosdk_zip_path}/demosdk/*
