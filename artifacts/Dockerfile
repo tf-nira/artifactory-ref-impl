@@ -66,7 +66,7 @@ ENV biosdk_client_zip_path=${base_path}/libs-release-local/biosdk/mock/0.9
 ENV demosdk_zip_path=${base_path}/libs-release-local/demosdk/default/
 
 # environment variable for Biosdk lib Zip path
-ENV biosdk_lib_zip_path=${base_path}/libs-release-local/biosdk/
+ENV biosdk_lib_zip_path=${base_path}/libs-release-local/compressor/
 
 # environment variable for Biosdk lib Zip path
 ENV jpegsdk_lib_zip_path=${base_path}/libs-release-local/jpeg-sdk/
@@ -92,14 +92,9 @@ ENV mosip_plugins_zip_path=${base_path}/libs-release-local/mosip-plugins
 # environment valiable for sdk jar
 ENV sdk_path=${base_path}/libs-release-local/mock-sdk/1.1.5/
 
-# environment valiable for image-compressor jar
-ENV image_compressor_path=${base_path}/libs-release-local/compressor/
-
 # environment valiable for sdk jar
 ENV jpeg_sdk_path=${base_path}/libs-release-local/jpeg-mock-sdk/1.1.5/
 
-# environment valiable for image-compressor jar
-ENV image_compressor_path=${base_path}/libs-release-local/compressor/
 
 # environment variable for Kernel Jars
 ENV kernel_jar_path=${base_path}/libs-release-local/io/mosip/kernel
