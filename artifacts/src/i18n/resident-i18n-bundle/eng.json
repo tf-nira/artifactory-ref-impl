@@ -219,7 +219,7 @@
          "remainingCharacters": "Remaining",
         "prnLabel": "PRN",
         "prnPlaceholder": "Enter PRN",
-        "checkPrnButton": "Check PRN",
+        "checkPrnButton": "Validate PRN",
         "invalidPrn": "PRN must be 13 digits",
         "validPrn": "PRN is valid",
         "prnRequired": "PRN is required to proceed."
