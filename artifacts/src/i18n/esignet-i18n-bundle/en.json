@@ -441,7 +441,7 @@
       "IDA-BIA-017": "Unable to Perform Biometric Match due to a Technical Issue",
       "IDA-BIA-018": "Unable to Process the Request due to a Technical Issue",
       "auth_failed": "Biometric data not available. Please try again.",
-      "IDA-MLC-018": "Invalid NIN/AIN. Please enter a valid NIN/AIN."
+      "IDA-MLC-018": "NIN/ AIN is inactive (Deactivated/Deceased)."
     },
     "pin": {
       "invalid_pin": "Invalid Pin",
