@@ -160,7 +160,7 @@
 		{
 			"name": "requestDetail",
 			"label": {
-				"eng": "Request Detail",
+				"eng": "Request Description",
 				"ara": "طلب التفاصيل",
 				"fra": "Détail de la demande",
 				"hin": "अनुरोध विवरण",
@@ -244,7 +244,7 @@
 		{
 			"filtername": "requestDetail",
 			"filterlabel": {
-				"eng": "Request Detail",
+				"eng": "Request Description",
                                 "ara": "طلب التفاصيل",
                                 "fra": "Détail de la demande",
                                 "hin": "अनुरोध विवरण",
