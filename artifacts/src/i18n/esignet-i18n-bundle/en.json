@@ -389,7 +389,7 @@
     "IDA-DPM-004": "Device Type and Biometric Type do not match",
     "IDA-MLC-024": "Domain of request is not matching with Domain of biometrics",
     "IDA-MLC-025": "Partner Certificate is not available",
-    "IDA-MLC-032": "NIN/ AIN is inactive (Deactivated/Deceased)",
+    "IDA-MLC-032": "NIN/AIN is inactive. Person is marked as deceased. Please contact NIRA for further assistance.",
     "IDA-MPA-019": "Partner policy is not active",
     "IDA-IDV-001": "Input Data Validation Failed",
     "IDA-RST-001": "URI should not be empty",
@@ -420,7 +420,7 @@
       "send_otp_failed_msg": "Failed to Send OTP",
       "invalid_otp_channel": "Invalid OTP Channel Provided.",
       "auth_failed": "Incorrect OTP. Please try again.",
-      "IDA-MLC-018": "NIN/ AIN is inactive (Deactivated/Deceased)."
+      "IDA-MLC-018": "NIN/AIN not found or is deactivated. Please verify the NIN/AIN and contact NIRA for further assistance if the issue persists."
     },
     "biometrics": {
       "IDA-BIA-001": "Biometric data did not match",
@@ -441,7 +441,7 @@
       "IDA-BIA-017": "Unable to Perform Biometric Match due to a Technical Issue",
       "IDA-BIA-018": "Unable to Process the Request due to a Technical Issue",
       "auth_failed": "Biometric data not available. Please try again.",
-      "IDA-MLC-018": "NIN/ AIN is inactive (Deactivated/Deceased)."
+      "IDA-MLC-018": "NIN/AIN not found or is deactivated. Please verify the NIN/AIN and contact NIRA for further assistance if the issue persists."
     },
     "pin": {
       "invalid_pin": "Invalid Pin",
