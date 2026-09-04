@@ -241,6 +241,16 @@
 					<classifier>jar-with-dependencies</classifier>
 					<type>jar</type>
                 		</artifactItem>
+<!-- artifactItem section for kernel-authcodeflowproxy-api -->
+				<artifactItem>
+					<groupId>io.mosip.kernal.authcodeflowproxy.api</groupId>
+					<artifactId>kernel-authcodeflowproxy-api</artifactId>
+					<version>${kernel-authcodeflowproxy-api.version}</version>
+					 <outputDirectory>${kernel-authcodeflowproxy-api.location}</outputDirectory> 
+					<destFileName>${kernel-authcodeflowproxy-api.fileName}</destFileName>
+					<classifier>jar-with-dependencies</classifier>
+					<type>jar</type>
+				</artifactItem>
 <!-- artifactItem section for mock-sdk-jpeg-extractor -->
 				<artifactItem>
 					<groupId>io.mosip.mock.sdk</groupId>
