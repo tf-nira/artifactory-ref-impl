@@ -58,7 +58,7 @@ RUN wget -O /tmp/kernel-authcodeflowproxy-api.jar "https://github.com/Karthik-TF
         -Dclassifier=jar-with-dependencies \
         -Dpackaging=jar \
         -Dfile=/tmp/kernel-authcodeflowproxy-api.jar && \
-    rm /tmp/kernel-authcodeflowproxy-apir.jar
+    rm /tmp/kernel-authcodeflowproxy-api.jar
 
 # set working directory for the user
 WORKDIR /home/${container_user}
