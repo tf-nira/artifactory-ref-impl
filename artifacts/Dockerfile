@@ -50,6 +50,15 @@ RUN wget -O /tmp/mock-sdk-jpeg-extractor.jar "https://github.com/Dharanidharan-S
         -Dpackaging=jar \
         -Dfile=/tmp/mock-sdk-jpeg-extractor.jar && \
     rm /tmp/mock-sdk-jpeg-extractor.jar
+RUN wget -O /tmp/kernel-authcodeflowproxy-api.jar "https://github.com/Karthik-TF/new-jars/releases/download/V1.2.0.1.1/kernel-authcodeflowproxy-api-1.2.0.1.1.jar" && \
+    mvn install:install-file \
+        -DgroupId=io.mosip.kernal.authcodeflowproxy.api \
+        -DartifactId=kernel-authcodeflowproxy-api \
+        -Dversion=1.2.0.1.1 \
+        -Dclassifier=jar-with-dependencies \
+        -Dpackaging=jar \
+        -Dfile=/tmp/kernel-authcodeflowproxy-api.jar && \
+    rm /tmp/kernel-authcodeflowproxy-apir.jar
 
 # set working directory for the user
 WORKDIR /home/${container_user}
