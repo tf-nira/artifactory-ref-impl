@@ -110,6 +110,10 @@
 		<mock-sdk-jpeg-extractor.location>/usr/share/nginx/html/artifactory/libs-release-local/jpeg-mock-sdk/1.1.5</mock-sdk-jpeg-extractor.location>
 		<mock-sdk-jpeg-extractor-lib.location>/usr/share/nginx/html/artifactory/libs-release-local/jpeg-sdk/jpeg-sdk-lib</mock-sdk-jpeg-extractor-lib.location>
 		<mock-sdk-jpeg-extractor.fileName>mock-sdk-jpeg-extractor-jar-with-dependencies.jar</mock-sdk-jpeg-extractor.fileName>
+		<!-- kernel-authcodeflowproxy-api -->
+		<kernel-authcodeflowproxy-api.version>1.2.0.1.1</kernel-authcodeflowproxy-api.version>
+		<kernel-authcodeflowproxy-api.location>/usr/share/nginx/html/artifactory/libs-release-local/kernel-authcodeflowproxy-api/1.2.0.1.1</kernel-authcodeflowproxy-api.location>
+		<kernel-authcodeflowproxy-api.fileName>kernel-authcodeflowproxy-api-1.2.0.1.1.jar</kernel-authcodeflowproxy-api.fileName>
 		<!-- hazelcast cast -->
 		<hazelcast.version>3.12.12</hazelcast.version>
 		<hazelcast.location>/usr/share/nginx/html/artifactory/libs-release-local/cache</hazelcast.location>
