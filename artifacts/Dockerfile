@@ -25,22 +25,39 @@ ARG container_user_gid=1001
 
 # install packages and create user
 RUN apt-get update -y && \
-apt-get install -y gnupg2 && \
-apt-get update -y && \
-apt-get install -y --no-install-recommends unzip wget zip openjdk-11-jdk && \
-groupadd -g ${container_user_gid} ${container_user_group} &&\
-rm -rf /var/lib/apt/lists/* &&\
-wget https://archive.apache.org/dist/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.tar.gz &&\
-tar -xzf apache-maven-3.8.8-bin.tar.gz && mv apache-maven-3.8.8 /usr/local/maven && rm apache-maven-3.8.8-bin.tar.gz &&\
-useradd -u ${container_user_uid} -g ${container_user_group} -s /bin/sh -m ${container_user} \
-&& mkdir -p /var/run/nginx /var/tmp/nginx \
-&& chown -R ${container_user}:${container_user} /usr/share/nginx /var/run/nginx /var/tmp/nginx
+    apt-get install -y --no-install-recommends \
+        gnupg2 \
+        unzip \
+        wget \
+        zip \
+        ca-certificates \
+        tar \
+        curl && \
+    wget -qO - https://packages.adoptium.net/artifactory/api/gpg/key/public | \
+        gpg --dearmor -o /etc/apt/trusted.gpg.d/adoptium.gpg && \
+    echo "deb https://packages.adoptium.net/artifactory/deb bookworm main" \
+        > /etc/apt/sources.list.d/adoptium.list && \
+    apt-get update -y && \
+    apt-get install -y --no-install-recommends temurin-11-jdk && \
+    groupadd -g ${container_user_gid} ${container_user_group} && \
+    wget https://archive.apache.org/dist/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.tar.gz && \
+    tar -xzf apache-maven-3.8.8-bin.tar.gz && \
+    mv apache-maven-3.8.8 /usr/local/maven && \
+    rm apache-maven-3.8.8-bin.tar.gz && \
+    useradd -u ${container_user_uid} \
+        -g ${container_user_group} \
+        -s /bin/sh \
+        -m ${container_user} && \
+    mkdir -p /var/run/nginx /var/tmp/nginx && \
+    chown -R ${container_user}:${container_user} \
+        /usr/share/nginx /var/run/nginx /var/tmp/nginx && \
+    rm -rf /var/lib/apt/lists/*
     
 COPY ./nginx.conf /etc/nginx/nginx.conf
 
-ENV MAVEN_HOME /usr/local/maven
-ENV PATH $MAVEN_HOME/bin:$PATH
-ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
+ENV MAVEN_HOME=/usr/local/maven
+ENV PATH=${MAVEN_HOME}/bin:${PATH}
+ENV JAVA_HOME=/usr/lib/jvm/temurin-11-jdk-amd64
 
 RUN wget -O /tmp/mock-sdk-jpeg-extractor.jar "https://github.com/Dharanidharan-S-04/newrepoforgit/releases/download/v1.2.0.1/mock-sdk-jpeg-extractor-1.2.0.1-20231228.043631-25-jar-with-dependencies.jar" && \
     mvn install:install-file \
