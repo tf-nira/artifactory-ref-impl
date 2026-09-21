@@ -1,5 +1,6 @@
 #FROM nginx@sha256:af296b188c7b7df99ba960ca614439c99cb7cf252ed7bbc23e90cfda59092305
-FROM nginx
+#FROM nginx
+FROM nginx:1.29-bookworm
 
 ARG SOURCE
 ARG COMMIT_HASH
